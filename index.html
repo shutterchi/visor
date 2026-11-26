@@ -29,19 +29,25 @@
 </svg>
 
 <nav class="nav" aria-label="Main">
-  <a class="nav__name" href="/">shutterchi.com</a>
+  <div class="nav__top">
+    <a class="nav__name" href="/">shutterchi.com</a>
+    <button class="nav__menu-btn" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu"><span></span><span></span></button>
+  </div>
   <div class="nav__links">
     <a class="nav__btn" href="/" aria-current="page"><svg aria-hidden="true"><use href="#i-home"/></svg><span class="nav__tip">Home</span></a>
-    <a class="nav__btn" href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span class="nav__tip">LinkedIn</span></a>
+    <a class="nav__btn" href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span class="nav__tip">Linked In</span></a>
     <a class="nav__btn" href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-file"/></svg><span class="nav__tip">CV</span></a>
   </div>
-  <a class="nav__btn nav__btn--round nav__links" href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="nav__tip">Call me</span></a>
-  <button class="nav__menu-btn" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu"><span></span><span></span></button>
+  <a class="nav__btn nav__btn--round" href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="nav__tip">Call me</span></a>
   <div class="nav__drawer" id="nav-drawer">
-    <a href="/"><svg aria-hidden="true"><use href="#i-home"/></svg>Home</a>
-    <a href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
-    <a href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-file"/></svg>CV (PDF)</a>
-    <a href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg>+46 73 353 72 62</a>
+    <div class="nav__drawer-inner">
+      <div class="nav__drawer-links">
+        <a class="nav__row" href="/"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Home</span></a>
+        <a class="nav__row" href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span>Linked In</span></a>
+        <a class="nav__row" href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-file"/></svg><span>CV</span></a>
+      </div>
+      <a class="nav__row nav__row--round" href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Call me</span></a>
+    </div>
   </div>
 </nav>
 
@@ -79,7 +85,7 @@
           <h2 id="work-title">Featured Work</h2>
           <p>Explore the diverse range of skills I’ve worked on, each reflecting my passion for creating beauty.</p>
         </div>
-        <div class="cards">
+        <div class="cards" data-reveal-row>
           <article class="card card--green reveal-item">
             <img class="card__collage" src="/assets/img/home/card-1.webp" alt="A collage of photographs: a bee, mountain forest, product shots, northern lights over a building and a black-and-white portrait" loading="lazy" width="1020" height="786">
             <div class="card__content">

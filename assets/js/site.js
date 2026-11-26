@@ -2,19 +2,35 @@
 (function () {
   document.documentElement.classList.add('js');
 
-  // Reveal on scroll. Elements animate in when they enter the viewport and
-  // reset once they have fully left it, so the animation replays next time.
+  // Reveal on scroll: each element animates in once, the first time it enters the view.
   var targets = document.querySelectorAll('.reveal-title, .reveal-item');
+
+  // Items in a side-by-side row: the left one comes in from the left,
+  // the right one from the right. In a single column they all come from the left.
+  var setDirections = function () {
+    document.querySelectorAll('[data-reveal-row]').forEach(function (row) {
+      var mid = row.getBoundingClientRect().left + row.getBoundingClientRect().width / 2;
+      row.querySelectorAll('.reveal-item').forEach(function (el) {
+        if (el.classList.contains('is-in')) return;
+        var r = el.getBoundingClientRect();
+        var sideBySide = r.width < row.getBoundingClientRect().width * 0.75;
+        if (sideBySide && r.left + r.width / 2 > mid) el.dataset.from = 'right';
+        else delete el.dataset.from;
+      });
+    });
+  };
+  setDirections();
+  window.addEventListener('resize', setDirections);
+
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting && e.intersectionRatio > 0.15) {
+        if (e.isIntersecting) {
           e.target.classList.add('is-in');
-        } else if (!e.isIntersecting) {
-          e.target.classList.remove('is-in');
+          io.unobserve(e.target);
         }
       });
-    }, { threshold: [0, 0.15] });
+    }, { threshold: 0.15 });
     targets.forEach(function (el) { io.observe(el); });
   } else {
     targets.forEach(function (el) { el.classList.add('is-in'); });
