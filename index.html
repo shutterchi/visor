@@ -5,28 +5,174 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Staging site: keep search engines away. Remove this line only on the live site. -->
 <meta name="robots" content="noindex, nofollow">
-<title>Visor · Shutterchi staging</title>
+<title>Farzad Shafai's creative portfolio</title>
+<meta name="description" content="A visual storyteller. Photography, video, graphic design and UI/UX by Farzad Shafai in Gothenburg, Sweden.">
+<meta property="og:title" content="Farzad Shafai's creative portfolio">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#ffffff;--ink:#000000;--text:#5a5a5a;--blue:#0b51c1;--tint-blue:#f1f6fd;
-        --font:"Catamaran",system-ui,-apple-system,"Segoe UI",sans-serif}
-  *{box-sizing:border-box}
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--tint-blue);
-       font-family:var(--font);color:var(--text);padding:24px}
-  main{background:var(--bg);border-radius:24px;padding:40px 44px;max-width:460px;
-       box-shadow:0 4px 18px rgba(0,0,0,.08)}
-  h1{margin:0 0 8px;color:var(--ink);font-weight:600;font-size:32px}
-  p{margin:0 0 12px;font-weight:300;font-size:18px;line-height:1.5}
-  a{color:var(--blue);font-weight:500}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<main>
-  <h1>Visor</h1>
-  <p>This is the staging area for the new shutterchi.com. Work in progress lives here.</p>
-  <p>The current site is at <a href="https://www.shutterchi.com">www.shutterchi.com</a>.</p>
-</main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M20.56 10.94l-7.5-7.5a1.5 1.5 0 0 0-2.12 0l-7.5 7.5A1.5 1.5 0 0 0 3 12v9c0 .41.34.75.75.75h6c.41 0 .75-.34.75-.75v-5.25h3V21c0 .41.34.75.75.75h6c.41 0 .75-.34.75-.75v-9c0-.4-.16-.78-.44-1.06zM19.5 20.25H15V15a.75.75 0 0 0-.75-.75h-4.5A.75.75 0 0 0 9 15v5.25H4.5V12L12 4.5l7.5 7.5v8.25z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.25 2.25H3.75a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h16.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5zm0 18H3.75V3.75h16.5v16.5zM9 10.5v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0zm8.25 2.63v3.37a.75.75 0 0 1-1.5 0v-3.37a1.88 1.88 0 0 0-3.75 0v3.37a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.48-.17 3.37 3.37 0 0 1 5.27 2.8zM9.38 7.88a1.13 1.13 0 1 1-2.26 0 1.13 1.13 0 0 1 2.26 0z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M20.03 7.72l-5.25-5.25a.75.75 0 0 0-.53-.22h-9a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-12a.75.75 0 0 0-.22-.53zM15 4.81l2.69 2.69H15V4.81zm3.75 15.44H5.25V3.75h8.25v4.5c0 .41.34.75.75.75h4.5v11.25zM15.75 12.75a.75.75 0 0 1-.75.75H9A.75.75 0 0 1 9 12h6c.41 0 .75.34.75.75zm0 3a.75.75 0 0 1-.75.75H9A.75.75 0 0 1 9 15h6c.41 0 .75.34.75.75z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M20.85 14.86l-4.42-1.98-.01-.01a1.5 1.5 0 0 0-1.42.13l-.07.05-2.28 1.95c-1.45-.7-2.94-2.18-3.64-3.61l1.95-2.32.05-.07a1.5 1.5 0 0 0 .12-1.41v-.01L9.14 3.15a1.5 1.5 0 0 0-1.56-.89A5.27 5.27 0 0 0 3 7.5C3 14.94 9.06 21 16.5 21a5.27 5.27 0 0 0 5.24-4.59 1.5 1.5 0 0 0-.89-1.55zM16.5 19.5a12.01 12.01 0 0 1-12-12 3.76 3.76 0 0 1 3.27-3.75l1.97 4.42-1.94 2.32-.05.07a1.5 1.5 0 0 0-.1 1.47c.85 1.74 2.6 3.48 4.36 4.32a1.5 1.5 0 0 0 1.47-.11l.07-.05 2.28-1.95 4.41 1.98a3.76 3.76 0 0 1-3.74 3.28z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M18.83 12.42l-5.25 5.4a.58.58 0 0 1-.83-.85l4.26-4.37H5.58a.6.6 0 0 1 0-1.2h11.43l-4.26-4.38a.6.6 0 0 1 .83-.85l5.25 5.4a.6.6 0 0 1 0 .85z" stroke="currentColor" stroke-width=".4"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 28 28"><clipPath id="logo-clip"><rect width="28" height="28" rx="8"/></clipPath><g clip-path="url(#logo-clip)"><path d="M28 0H0v28h28V0z" fill="#F19A0E"/><path d="M0 28V0h2.86L28 13.14V28H0z" fill="#0E65F1"/><path d="M28 20.31V28H0V11l28 9.31z" fill="#0B51C1"/><path d="M28 26.73V28H0v-5.81l28 4.54z" fill="#083D91"/></g></symbol>
+</svg>
+
+<nav class="nav" aria-label="Main">
+  <a class="nav__name" href="/">shutterchi.com</a>
+  <div class="nav__links">
+    <a class="nav__btn" href="/" aria-current="page"><svg aria-hidden="true"><use href="#i-home"/></svg><span class="nav__tip">Home</span></a>
+    <a class="nav__btn" href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span class="nav__tip">LinkedIn</span></a>
+    <a class="nav__btn" href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-file"/></svg><span class="nav__tip">CV</span></a>
+  </div>
+  <a class="nav__btn nav__btn--round nav__links" href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="nav__tip">Call me</span></a>
+  <button class="nav__menu-btn" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu"><span></span><span></span></button>
+  <div class="nav__drawer" id="nav-drawer">
+    <a href="/"><svg aria-hidden="true"><use href="#i-home"/></svg>Home</a>
+    <a href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+    <a href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-file"/></svg>CV (PDF)</a>
+    <a href="tel:+46733537262"><svg aria-hidden="true"><use href="#i-phone"/></svg>+46 73 353 72 62</a>
+  </div>
+</nav>
+
+<div class="page">
+  <header class="hero">
+    <img src="/assets/img/home/hero.webp" srcset="/assets/img/home/hero-1200.webp 1200w, /assets/img/home/hero.webp 2400w" sizes="(max-width: 640px) 1110px, 142vw" alt="An old wooden fishing boat tied with orange ropes on a calm, misty sea" fetchpriority="high">
+  </header>
+
+  <div class="page-title">
+    <img class="page-title__avatar" src="/assets/img/home/avatar.webp" alt="Portrait of Farzad Shafai" width="128" height="128">
+    <h1 class="page-title__text">
+      <span class="page-title__name">Farzad Shafai</span>
+      <span class="page-title__sub">creative portfolio</span>
+    </h1>
+  </div>
+
+  <main class="body">
+
+    <section class="section about" aria-labelledby="about-title">
+      <div class="section__inner">
+        <div class="title-box reveal-title"><h2 id="about-title">About</h2></div>
+        <div class="stats reveal-title">
+          <div class="stat"><b>16</b><span>years behind<br>the camera</span></div>
+          <div class="stat"><b>11</b><span>years of<br>film editing</span></div>
+          <div class="stat"><b>10</b><span>years of<br>graphic design</span></div>
+          <div class="stat"><b>6</b><span>years of<br>UI/UX design</span></div>
+        </div>
+        <p class="brief reveal-title">Visual storyteller is the shortest way to describe what I do.<br>In practice, that means shooting, editing and designing until a story looks as good as it sounds in my head.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="work-title">
+      <div class="section__inner">
+        <div class="title-box reveal-title">
+          <h2 id="work-title">Featured Work</h2>
+          <p>Explore the diverse range of skills I’ve worked on, each reflecting my passion for creating beauty.</p>
+        </div>
+        <div class="cards">
+          <article class="card card--green reveal-item">
+            <img class="card__collage" src="/assets/img/home/card-1.webp" alt="A collage of photographs: a bee, mountain forest, product shots, northern lights over a building and a black-and-white portrait" loading="lazy" width="1020" height="786">
+            <div class="card__content">
+              <h3>Photography</h3>
+              <p>A curated collection of my best shots from the last 16 years, showcasing my evolution as a photographer.</p>
+              <a class="btn" href="/photography/">View Photography Portfolio <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--lilac reveal-item">
+            <img class="card__collage" src="/assets/img/home/card-2.webp" alt="Screens from the reloTrack website, design system and app" loading="lazy" width="1020" height="786">
+            <div class="card__content">
+              <h3>UI/UX Design</h3>
+              <p>A showcase of my UI/UX design journey over the past 4 years, highlighting key projects and design philosophies.</p>
+              <a class="btn" href="/ui-ux/">View UI/UX Design Portfolio <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--sand reveal-item">
+            <img class="card__collage" src="/assets/img/home/card-3.webp" alt="Logos, posters and brochures, including Centroid, PT Builders, High Cliff Homes and reloTrack" loading="lazy" width="1020" height="786">
+            <div class="card__content">
+              <h3>Visual Design</h3>
+              <p>A showcase of my graphic design journey over the past 10 years, highlighting key projects and design philosophies.</p>
+              <a class="btn" href="/visual-design/">View Visual Design Portfolio <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--blue reveal-item">
+            <img class="card__collage" src="/assets/img/home/card-4.webp" alt="Stills from films and videos, including a billiard hall scene and a desert landscape" loading="lazy" width="1020" height="786">
+            <div class="card__content">
+              <h3>Video</h3>
+              <p>A selection of the most compelling video work I have done over the last 13 years, demonstrating my skills in visual storytelling.</p>
+              <a class="btn" href="/video/">View Cinematic Portfolio <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--journey" aria-labelledby="journey-title">
+      <div class="section__inner">
+        <div class="title-box reveal-title">
+          <h2 id="journey-title">My Professional Journey</h2>
+          <p>Highlights of my experience in different creative fields.</p>
+        </div>
+        <ul class="jobs">
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2025 - Present</span><span class="job__title"><strong>Co-founder &amp; Creative Director</strong> <span>new roots</span></span></div><span class="job__logo"><img src="/assets/img/logos/new-roots.png" alt="new roots logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2025 - Present</span><span class="job__title"><strong>Web Designer</strong> <span>Resource Point AB</span></span></div><span class="job__logo"><img src="/assets/img/logos/resource-point.png" alt="Resource Point logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2010 - Present</span><span class="job__title"><strong>Visual Creative</strong> <span>(Freelancer)</span></span></div><span class="job__logo"><img src="/assets/img/logos/shutterchi.png" alt="Shutterchi logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2022 - 2025</span><span class="job__title"><strong>Design and Marketing</strong> <span>KRUDO</span></span></div><span class="job__logo"><img src="/assets/img/logos/krudo.png" alt="Krudo Industrial logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2022 - 2025</span><span class="job__title"><strong>UI/UX Designer</strong> <span>Centroid</span></span></div><span class="job__logo"><img src="/assets/img/logos/centroid.png" alt="Centroid logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2021 - 2022</span><span class="job__title"><strong>DIT</strong> <span>Empty Nets (Feature Film)</span></span></div><span class="job__logo"><img src="/assets/img/logos/basis-berlin.png" alt="Basis Berlin logo" loading="lazy"></span></li>
+          <li class="job reveal-item"><div class="job__main"><span class="job__year">2014 - 2016</span><span class="job__title"><strong>Video Producer</strong> <span>Ramka Studio</span></span></div><span class="job__logo"><img src="/assets/img/logos/ramka.png" alt="Ramka Studio logo" loading="lazy"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="toolbox-title">
+      <div class="section__inner">
+        <div class="title-box reveal-title">
+          <h2 id="toolbox-title">My Toolbox</h2>
+          <p>A list of major tools and software that help me tell stories.<br>(and my level of proficiency in each)</p>
+        </div>
+        <div class="toolbox">
+          <div class="tools reveal-item"><h3>Photography</h3><img src="/assets/img/tools/photography.webp" alt="Lightroom and Photoshop" loading="lazy"></div>
+          <div class="tools reveal-item"><h3>UI/UX</h3><img src="/assets/img/tools/uiux.webp" alt="Figma and Adobe XD" loading="lazy"></div>
+          <div class="tools reveal-item"><h3>Vector Graphics</h3><img src="/assets/img/tools/vector.webp" alt="Affinity Designer and Illustrator" loading="lazy"></div>
+          <div class="tools reveal-item"><h3>Video</h3><img src="/assets/img/tools/video.webp" alt="Premiere Pro, DaVinci Resolve, Final Cut Pro, After Effects and Audition" loading="lazy"></div>
+          <div class="tools tools--office reveal-item"><h3>Office Tools</h3><img src="/assets/img/tools/office.webp" alt="Word, Excel, PowerPoint, Google Docs, Sheets and Slides, Pages, Numbers and Keynote" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="contact">
+      <div class="contact__top">
+        <span class="contact__rec eyebrow"><i></i>Get in touch</span>
+        <span class="eyebrow"><span class="contact__city--long">Gothenburg · Sweden</span><span class="contact__city--short">Gothenburg</span></span>
+      </div>
+      <p class="contact__heading"><span class="light">Let’s shape</span><span class="bold">your vision</span></p>
+      <div class="contact__data">
+        <a class="contact__item" href="mailto:farzad.shafai@gmail.com"><span class="eyebrow">Email</span><span class="value">farzad.shafai@gmail.com</span></a>
+        <a class="contact__item" href="tel:+46733537262"><span class="eyebrow">Phone</span><span class="value">+46 73 353 72 62</span></a>
+        <a class="contact__item" href="https://www.linkedin.com/in/farzad-shafai/" target="_blank" rel="noopener"><span class="eyebrow">LinkedIn</span><span class="value">farzad-shafai</span></a>
+        <a class="contact__item" href="https://drive.google.com/file/d/1xZfKwV66z1wPc6zR-BTT6BnmbDxlXSJr/view?usp=share_link" target="_blank" rel="noopener"><span class="eyebrow">CV</span><span class="value">Download (PDF)</span></a>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <span class="bottom-bar__left"><svg aria-hidden="true"><use href="#i-logo"/></svg>© 2026 Farzad Shafai</span>
+      <span class="bottom-bar__right">made from scratch in Figma</span>
+    </div>
+  </footer>
+</div>
+
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>
